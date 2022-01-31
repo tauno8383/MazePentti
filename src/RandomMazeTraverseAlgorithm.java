@@ -3,7 +3,7 @@ import java.util.Queue;
 import java.util.Stack;
 
 /*
-Makes MazeTraveller{} to wander randomly in maze.
+Makes MazeTraveller implementation to wander randomly in maze.
  */
 public class RandomMazeTraverseAlgorithm implements MazeTraverseAlgorithm {
     private MazeControl mMazeControl;

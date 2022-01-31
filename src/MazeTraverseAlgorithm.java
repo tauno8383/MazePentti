@@ -3,25 +3,11 @@ import java.util.Queue;
 
 /**
  * An interface that every maze traversal algorithm should implement.
- * Pentti navigates in the MazeMap by asking where to go next to this algorithm.
- * The algorithm trusts that Pentti will indeed go where directed.
- * The algorithm does not know the maze structure
- * but it knows the MazeTraveller{}.
+ * MazeTraveller navigates in the MazeMap by asking where to go next to this algorithm.
+ * The algorithm trusts that MazeTraveller will indeed go where directed.
+ * The algorithm does not know the maze structure but it can ask fair question to MazeMap like is wall left of me.
  */
 public interface MazeTraverseAlgorithm {
-
-//    /**
-//     * Generates 2D array of symbols that this algorithm desires to be displayed. This can be for example the path
-//     * it has been traversed, or ded ends it has been found.
-//     * @return the 2D array of symbols.
-//     */
-//    char[][] getDrawable();
-//
-//    /**
-//     * MazeTraverseAlgorithm may keep track of visited Positions, but it is not mandatory.
-//     * @return return Positions in the order this algorithm has visited.
-//     */
-//    Queue<Position> getVisitedPositions();
 
     /**
      * The algorithm figures out where the traveller should go next based on the given travellersPosition.
