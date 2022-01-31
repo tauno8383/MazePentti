@@ -24,37 +24,64 @@ public class MazeControl implements MazeTraverseHappenedListener {
         new MazeControl();
     }
 
-
-    public boolean shouldUseTremauxsAlgorithm() {
-        return mUI.getAlgorithm().contentEquals(MazeConsoleInput.TREAMAUX_ALGORITHM);
-    }
-
-
-    public boolean shouldUseTaunosAlgorithm() {
-        return mUI.getAlgorithm().contentEquals(MazeConsoleInput.TAUNOS_ALGORITHM);
-    }
-
-    public boolean shouldUseRandomAlgorithm() {
-        return mUI.getAlgorithm().contentEquals(MazeConsoleInput.RANDOM_ALGORITHM);
-    }
-
     @Override
     public void mazeTraverseHappened() {
         mUI.displayMaze(mMazeMap.getMazeDrawable());
     }
 
+    /**
+     * Determines weather to use Tremauxs algorithm.
+     * @return true if should use Tremauxs algorithm.
+     */
+    public boolean shouldUseTremauxsAlgorithm() {
+        return mUI.getAlgorithm().contentEquals(MazeConsoleInput.TREAMAUX_ALGORITHM);
+    }
+
+    /**
+     * Determines weather to use Tauno's algorithm.
+     * @return true if should use Tauno's algorithm.
+     */
+    public boolean shouldUseTaunosAlgorithm() {
+        return mUI.getAlgorithm().contentEquals(MazeConsoleInput.TAUNOS_ALGORITHM);
+    }
+
+    /**
+     * Determines weather to use random wanderer algorithm.
+     * @return true if should use random wanderer algorithm.
+     */
+    public boolean shouldUseRandomAlgorithm() {
+        return mUI.getAlgorithm().contentEquals(MazeConsoleInput.RANDOM_ALGORITHM);
+    }
+
+    /**
+     * Getter for the MazeMap instance.
+     * @return the instance of MazeMap.
+     */
     public MazeMap getMazeMap() {
         return mMazeMap;
     }
 
+    /**
+     * Determines weather the MazeTraveler is standing on exit.
+     * @param mazeTraveller is the traveller hose position is analyzed.
+     * @return true if the MazeTraveller is standing on exit.
+     */
     public boolean inExit(MazeTraveller mazeTraveller) {
         return mMazeMap.inExit(mazeTraveller);
     }
 
+    /**
+     * Getter for the MazeTraverseAlgorithm that is currently in use.
+     * @return the MazeTraverseAlgorithm in use.
+     */
     public MazeTraverseAlgorithm getMazeTraverseAlgorithm() {
         return mMazeTraverseAlgorithm;
     }
 
+    /**
+     * Getter for the MazeTraveller in use.
+     * @return the active MazeTraveller.
+     */
     public MazeTraveller getMazeTraveller() {
         return mMazeTraveller;
     }
