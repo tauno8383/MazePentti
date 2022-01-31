@@ -1,3 +1,3 @@
 # MazePentti
-simple maze app
+simple maze app.
 Lisence; Apache License v2.0
