@@ -27,7 +27,7 @@ public class Pentti implements Traveller {
     /**
      * Constructor
      * @param mazeTraverseAlgorithm is the MazeTraverseAlgorithm give to Pentti in order to apply the Dependency Injection
-     *                              principle. Pentti will navigate with this algorithm.
+     *                              principle. Pentti will navigate with this algorithm..
      */
     public Pentti(MazeTraverseAlgorithm mazeTraverseAlgorithm) {
         mMazeTraverseAlgorithm = mazeTraverseAlgorithm;
