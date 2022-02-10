@@ -1,3 +1,5 @@
+package UI;
+
 /**
  * An interface for deriving inputs from an user.
  */
@@ -16,9 +18,10 @@ public interface MazeInput {
     String getAlgorithm();
 
     /**
-     * Provides an info how many moves user desires to MazeTraveller to make maximum.
-     * @return maximum number of moves allowed by MazeTraveller.
+     * Gets he array that determines by its length how many times to try the maze and by each element of the array it
+     * determines how many moves traveller will have in each try.
+     * @return the array of max number of moves. The array length determines how many times to try the maze.
      */
-    int getMoves();
+    int[] getMaxMoves();
 
 }

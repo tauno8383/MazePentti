@@ -1,3 +1,5 @@
+package UI;
+
 /**
  * Provides an interface for displaying all relevant to users.
  */
@@ -9,5 +11,11 @@ public interface MazeOutput {
      *                  that the algorithm has traveller.
      */
     void displayMaze(char[][] obstacles);
+
+    /**
+     * Display the given string so that it is visible to the user,
+     * @param string is the string to display.
+     */
+    void println(String string);
 
 }
