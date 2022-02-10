@@ -38,7 +38,7 @@ public class Position {
     }
 
     /**
-     * A factory method for implementing new position hat is left to this one.
+     * A factory method for implementing new position that is left to this one.
      *
      * @return a new Position instance that is left to this one.
      */
@@ -47,7 +47,7 @@ public class Position {
     }
 
     /**
-     * A factory method for implementing new position hat is above to this one.
+     * A factory method for implementing new position that is above to this one.
      *
      * @return a new Position instance that is above to this one.
      */
@@ -56,7 +56,7 @@ public class Position {
     }
 
     /**
-     * A factory method for implementing new position hat is right to this one.
+     * A factory method for implementing new position that is right to this one.
      *
      * @return a new Position instance that is right to this one.
      */
@@ -65,7 +65,7 @@ public class Position {
     }
 
     /**
-     * A factory method for implementing new position hat is below to this one.
+     * A factory method for implementing new position that is below to this one.
      *
      * @return a new Position instance that is below to this one.
      */
