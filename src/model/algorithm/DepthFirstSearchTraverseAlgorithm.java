@@ -79,9 +79,9 @@ public class DepthFirstSearchTraverseAlgorithm implements MazeTraverseAlgorithm 
      * @return true if there is a path to the exit from the given Position.
      */
     private boolean depthFirstSearch(Position position) {
-        if (mMovesLeftToTake < 0) return false; // return false if all moves used
-        if (mMazeControl.inExit(position)) return true; // The exit has been found
-        if (!mMazeControl.isPossibleToTravel(position) || visited(position)) return false;
+        if (mMovesLeftToTake < 0) return false; // Return false if all moves used.
+        if (mMazeControl.inExit(position)) return true; // The exit has been found.
+        if (!mMazeControl.isPossibleToTravel(position) || visited(position)) return false; // The actual rule of the travel: Cant go blocked direction and can go visited direction.
         mVisitedPositions.add(position);
         notifyTraverseAlgorithmProceededListeners();
         --mMovesLeftToTake;
