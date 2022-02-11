@@ -14,10 +14,16 @@ import java.util.List;
  */
 public class MazeMap {
 
+    /**
+     * A character symbol symbolizing the starting position.
+     */
     public static final char START_SYMBOL = '^';
-    static final char EXIT_SYMBOL = 'E';
+    /**
+     * A character symbol symbolizing a block/wall.
+     */
     public static final char BLOCK_SYMBOL = '#';
-    static final char SPACE_SYMBOL = ' ';
+    private static final char EXIT_SYMBOL = 'E';
+    private static final char SPACE_SYMBOL = ' ';
     private final Traveller mMazeTraveller; // The one who wonders around the maze.
 
     char[][] mMazeSymbols; // A 2D array symbolizing the whole maze visually.
@@ -62,8 +68,8 @@ public class MazeMap {
     /**
      * Determinate weather the given maze in String format is a valid one for creating a map.
      * NOTE: The function is not exhaustive and needs improvements in the future.
-     * @param mazeString to be tested
-     * @return weather the given maze is valid as to be MazeMap.
+     * @param mazeString is the string representation of a maze that will be tested
+     * @return weather the given maze string is valid for generating an instance of this MazeMap.
      */
     public static boolean isValidMaze(String mazeString) {
         if (mazeString == null)

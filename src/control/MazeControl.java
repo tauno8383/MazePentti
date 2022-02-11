@@ -12,7 +12,7 @@ import model.Pentti;
 
 /**
  * This class is a control in MVC architecture.
- * It holds reference on many MazeMap, Traveller, and MazeTraverseAlgorithm and works as an intermediate between communication of some objects.
+ * It holds reference on MazeMap, Traveller, and MazeTraverseAlgorithm and works as an intermediate between communication of some objects.
  */
 public class MazeControl {
 
@@ -56,7 +56,7 @@ public class MazeControl {
     }
 
     /**
-     * The program starts here
+     * The program starts here.
      * @param args Arguments currently not utilized.
      */
     public static void main(String[] args) {
@@ -66,7 +66,7 @@ public class MazeControl {
     /**
      * Determines weather the given position is the exit of the maze.
      *
-     * @param position is the Position to examine
+     * @param position is the Position to examine.
      * @return true if the given Position is in the exit.
      */
     public boolean inExit(Position position) {
@@ -84,9 +84,9 @@ public class MazeControl {
     }
 
     /**
-     * Prints out the given String.
+     * Display somehow the given String.
      *
-     * @param s is the String to output.
+     * @param s is the String to display.
      */
     public void output(String s) {
         mUI.println(s);

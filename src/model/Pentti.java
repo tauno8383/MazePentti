@@ -7,15 +7,20 @@ import java.util.List;
 
 /**
  * Pentti is the one that traverses the maze. Pentti has a Position.
+ * Pentti is a Traveller and thus he is also TraverseAlgorithmProceededListener.
  * Pentti will always go to the position that MazeTraverseAlgorithm gives to him by nextPosition().
  * Pentti has got his MazeTraverseAlgorithm as a parameter from constructor (Dependency Injection).
  * Pentti do not know where he locates in terms of absolut coordinates in the maze
  * but he keeps track of places he has travelled relative to the starting position.
- * Pentti always smiles ☺
+ * Pentti is and its travel path can be visualized since Pentti is MazeDrawable as he is Traveller.
+ * Pentti always smiles ☺ when visualized.
  */
 public class Pentti implements Traveller {
 
-    public static final char PENTTIS_FACE_SYMBOL = '☺'; // Pentti's portrait.
+    /**
+     * Pentti's portrait.
+     */
+    public static final char PENTTIS_FACE_SYMBOL = '☺';
 
     /*
      * The Position where pentti locates. This Position is relative to the starting Position,
@@ -27,7 +32,7 @@ public class Pentti implements Traveller {
     /**
      * Constructor
      * @param mazeTraverseAlgorithm is the MazeTraverseAlgorithm give to Pentti in order to apply the Dependency Injection
-     *                              principle. Pentti will navigate with this algorithm..
+     *                              principle. Pentti will navigate with this algorithm.
      */
     public Pentti(MazeTraverseAlgorithm mazeTraverseAlgorithm) {
         mMazeTraverseAlgorithm = mazeTraverseAlgorithm;

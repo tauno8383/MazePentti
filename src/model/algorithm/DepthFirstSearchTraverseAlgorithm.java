@@ -10,16 +10,22 @@ import java.util.*;
 /**
  * Depth First Search (DFS) algorithm.
  * The algorithm tracks recursively the whole path to the exit.
- * The algorithm does not know the maze structure: i.e the aural location of the Traveller or the size of the maze
- * but it can ask fair question to MazeMap can it be travelled to the left or is there a wall.
- * see:
+ * The algorithm does not know the maze structure: i.e the aural location of itself or the Traveller or nigher the size of the maze,
+ * but it can ask fair question to MazeMap, like can it be travelled to the left or is there a wall.
+ * see some examples:
  * http://www.astrolog.org/labyrnth/algrithm.htm#solve
  * https://www.youtube.com/watch?v=W9F8fDQj7Ok
  * https://en.wikipedia.org/wiki/Maze-solving_algorithm
  */
 public class DepthFirstSearchTraverseAlgorithm implements MazeTraverseAlgorithm {
 
+    /**
+     * The character symbol that presents a visited position.
+     */
     public static final char VISITED_SYMBOL = '·';
+    /**
+     * The name of the algorithm.
+     */
     public static final String DFS_ALGORITHM = "Depth First Search algorithm";
     Stack<Position> mVisitedPositions = new Stack<>();
     List<TraverseAlgorithmProceededListener> mTraverseAlgorithmProceededListeners = new ArrayList<>(); // A list of listeners who are interested if algorithm proceeds a step. For example if an UI would like to update it self.

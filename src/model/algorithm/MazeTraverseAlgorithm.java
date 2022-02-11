@@ -6,12 +6,12 @@ import model.TraverseAlgorithmProceededListener;
 
 /**
  * An interface that every maze traversal algorithm should implement.
- * Traveller navigates in the MazeMap by asking where to go next to this algorithm.
+ * For example a Traveller can navigate in the MazeMap by asking where to go next to this algorithm.
  */
 public interface MazeTraverseAlgorithm extends MazeDrawable {
 
     /**
-     * The algorithm figures out where the traveller should go next based on the given travellersPosition.
+     * Registered listeners (see function registerListener()) can ask the next position from this function..
      *
      * @return the position where traveller should go next.
      */

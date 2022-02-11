@@ -18,9 +18,9 @@ public interface MazeInput {
     String getAlgorithm();
 
     /**
-     * Gets he array that determines by its length how many times to try the maze and by each element of the array it
-     * determines how many moves traveller will have in each try.
-     * @return the array of max number of moves. The array length determines how many times to try the maze.
+     * Gives the array that determines by its length how many times to try the maze and by each element of the array it
+     * determines how many moves sold be used in maximum.
+     * @return the array of max number of moves. The array length determines how many times to move.
      */
     int[] getMaxMoves();
 
