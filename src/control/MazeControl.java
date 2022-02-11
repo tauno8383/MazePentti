@@ -11,7 +11,7 @@ import model.Traveller;
 import model.Pentti;
 
 /**
- * This class is a kind of control in this MVC architecture.
+ * This class is a control in MVC architecture.
  * It holds reference on many MazeMap, Traveller, and MazeTraverseAlgorithm and works as an intermediate between communication of some objects.
  */
 public class MazeControl {
