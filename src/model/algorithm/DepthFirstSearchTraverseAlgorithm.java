@@ -26,6 +26,10 @@ public class DepthFirstSearchTraverseAlgorithm implements MazeTraverseAlgorithm 
     MazeControl mMazeControl;
     private int mMovesLeftToTake; // How many moves can this algorithm take.
 
+    /**
+     * Constructor.
+     * @param mazeControl is the control object of MVC pattern.
+     */
     public DepthFirstSearchTraverseAlgorithm(MazeControl mazeControl) {
         mMazeControl = mazeControl;
     }

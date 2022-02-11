@@ -11,6 +11,11 @@ public class Marker {
     private final char mSymbol; // The character that visually symbolizes this marker.
     private final Position mPosition; // The position of this marker.
 
+    /**
+     * Constructor.
+     * @param symbol is the symbol that symbolises this marker visually.
+     * @param position is the position of this markers.
+     */
     public Marker(char symbol, Position position) {
         mSymbol = symbol;
         mPosition = position;

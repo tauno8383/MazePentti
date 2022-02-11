@@ -59,6 +59,10 @@ public class MazeConsoleInput implements MazeInput {
     private static final int[] MAX_MOVES = new int[]{20, 150, 200};
     private final MazeControl mMazeControl;
 
+    /**
+     * Constructor.
+     * @param mazeControl is the control object of MVC pattern.
+     */
     public MazeConsoleInput(MazeControl mazeControl) {
         mMazeControl = mazeControl;
     }
