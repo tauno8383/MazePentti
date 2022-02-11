@@ -4,9 +4,10 @@ import control.MazeControl;
 import model.MazeMap;
 import model.algorithm.DepthFirstSearchTraverseAlgorithm;
 
-import javax.swing.*;
-import javax.swing.filechooser.FileFilter;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
