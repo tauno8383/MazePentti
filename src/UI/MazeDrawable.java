@@ -10,7 +10,7 @@ import java.util.List;
 public interface MazeDrawable {
 
     /**
-     * A getter method for Markers that can be visualized, what ever they happen to be. Usually for printing staff for users.
+     * A getter method for Markers that can be visualized. Usually for printing staff for users.
      * For example if the algorithm want to show the path one of travel.
      * @return a list of Markers that can be visualized.
      */
